@@ -58,9 +58,37 @@ Emergency Signaling System </br>
 Weighing Machines </br>
 
 ## CIRCUIT DIAGRAM
+<img width="1299" height="906" alt="image" src="https://github.com/user-attachments/assets/395f7c49-84f9-4fb7-8486-a6496cb3aa8c" />
+
 
 ## PROGRAM
 
+```
+const int buttonPin=2;
+const int ledPin=13;
+int buttonState=0;
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(ledPin,OUTPUT);
+  pinMode(buttonPin,INPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  buttonState = digitalRead(buttonPin);
+  if(buttonState==HIGH)
+  {
+    digitalWrite(ledPin,HIGH);
+  }
+  else 
+  {
+    digitalWrite(ledPin,LOW);
+  }
+}
+```
 ## OUTPUT
+<img width="1295" height="910" alt="image" src="https://github.com/user-attachments/assets/be1a3084-8615-4e8f-931a-2f8ac0d37539" />
 
 ## RESULT
+Thus to design and implement a system for LED control using an Arduino microcontroller and a push button is successfully executed
+
